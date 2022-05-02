@@ -1,0 +1,78 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://media.istockphoto.com/videos/cloudy-sky-with-sun-rays-video-id962500712?s=640x640');
+    background-size: 100%;
+}
+
+h1 {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    margin: auto;
+    display: block;
+    color: Black;
+    width: 30%;
+    text-align: center;
+    font-size: 70px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000,
+            0 0 50px #7fdcec, 0 0 60px #54e2ec, 0 0 70px #5490b3;
+    }
+
+    to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #37ec1fd3, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+            0 0 60px #2cd434b2
+    }
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: rgb(29, 136, 223);
+    width: 370px;
+    border-radius: 5px;
+}
+
+#form>input {
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+#container {
+    width: 1000px;
+    display: flex;
+    text-align: center;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    margin: 20px auto;
+    border-radius: 5px;
+    /* background-color: rgb(153, 245, 245); */
+    background-color: rgb(29, 136, 223);
+    -moz-box-shadow: 0 0 5px 5px rgb(214, 206, 206);
+    -webkit-box-shadow: 0 0 5px 5px rgb(199, 191, 191);
+    box-shadow: 0 0 5px 5px rgb(212, 203, 203);
+}
+
+#container>div {
+    margin: 10px 20px;
+}
+
+#container>div>img {
+    width: 100px;
+}
